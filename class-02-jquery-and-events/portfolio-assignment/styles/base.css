@@ -1,0 +1,72 @@
+
+.tab {
+  text-decoration: none;
+}
+
+.tab: hover {
+  text-decoration: none;
+  color: deeppink;
+}
+.icon-twitter3 {
+  text-decoration: none;
+}
+.icon-twitter3: hover {
+  text-decoration: none;
+  color: deeppink;
+}
+
+.icon-github {
+  text-decoration: none;
+}
+.icon-github: hover {
+  text-decoration: none;
+  color: deeppink;
+}
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  color: #173e43;
+  margin: 3em;
+}
+
+hr {
+  margin: 1em;
+  width: 80%;
+}
+
+/*TEXT STYLES
+=======================================*/
+header.site-header h1 {
+  font-size: 8em;
+}
+
+header.site-header p {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+address {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+}
+/*LINK STYLES
+=======================================*/
+
+a, a:link, a:active {
+  color: #3fb0ac;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #fae596;
+}
+
+a:visited {
+  color: pink;
+}

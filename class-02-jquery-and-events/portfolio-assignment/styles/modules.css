@@ -1,0 +1,68 @@
+1/11
+.site-header {
+  padding: .5em;
+  color: #dddfd4;
+  background-color: #3fb0ac;
+  text-align: center;
+  border_radius: 15px;
+
+}
+
+.main-nav {
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+/* TODO: Style the filters so they look good on small screens:
+    Use the full width, and remove the list bullet. */
+.main-nav {
+  list-style-type: none;
+
+}
+
+#filters {
+  min-width: 100% auto;
+
+  padding: 0;
+}q
+
+#filters select {
+
+}
+
+#about section {
+  font-family: Cardo, serif;
+}
+
+.article-body {
+  font-family: Cardo, serif;
+}
+
+.template {
+  display: none;
+}
+
+.byline {
+  color: #777;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
