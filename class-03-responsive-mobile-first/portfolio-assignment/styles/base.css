@@ -1,0 +1,54 @@
+/* TODO: Add a rule for images, so they never exceed their container's width. */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  background-image: url('bnw.jpg');
+  background-size: cover;
+  color: #8620AB;
+  opacity: 1;
+
+}
+
+hr {
+  margin: 1em;
+  width: 80%;
+}
+
+/*TEXT STYLES
+=======================================*/
+p {
+  font-size: 1em;
+
+}
+
+address {
+  display: inline-block;
+}
+
+/*LINK STYLES
+=======================================*/
+
+a, a:link, a:active {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover, a:focus {
+  color: #29506D;
+}
+
+a:visited {
+}
+
+#findme {
+  font: monospace;
+  color: white;
+  font-size: 30px;
+  background-color:#40A17F;
+}
