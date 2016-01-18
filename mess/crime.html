@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Real Seattle</title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script>
+  var crime = {};
+  var myArray = [];
+  var endPoint = "https://data.seattle.gov/resource/pu5n-trf4.json";
+
+  $.getJSON(endPoint, function(data){
+  $.each(data, function(key, value){
+
+      myArray.push(value.initial_type_description);
+  });
+
+  console.log(myArray)
+});
+
+
+</script>
+
+
+
+  <body>
+    <p> </p>
+  </body>
+</html>
