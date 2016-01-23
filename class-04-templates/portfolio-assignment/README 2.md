@@ -29,3 +29,10 @@ Socratas's API, Seattle-King county open source Data and Mary(TA):
 Google maps API':
 'http://developers.google.com/maps/'
 'https://www.youtube.com/watch?v=obOa8fdJ9aQ'
+
+Stackoverflow.com/:
+for general trouble shooting and info
+
+Songkick(SK) API and it's google forum for detailed info:
+
+GoogleMaps API: for the access key and API's
