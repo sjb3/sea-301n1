@@ -66,7 +66,7 @@ Article.fetchAll = function() {
     // then load all the data into Article.all with the .loadAll function above,
     // and then render the index page.
 
-    var url = '../data/ipsumArticles.json';
+    var url = '../data/hackerIpsum.json';
     $.getJSON(url, function(rawData){
       Article.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
