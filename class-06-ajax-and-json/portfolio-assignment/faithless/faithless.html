@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Faithless</title>
+  </head>
+  <body>
+    <h1><em>Faithless Tour calendar</em></h1>
+
+      <img src='faithless.jpg'/>
+
+      <!-- <audio controls>
+        <source src='sun2me.mp3' type='audio/mpeg'>
+      </audio> -->
+    <iframe id+'youtube' width="560" height="315" src="https://www.youtube.com/embed/JA9tOWeBxPQ" frameborder="0" allowfullscreen></iframe>
+    <ul id='events'>
+
+    </ul>
+
+    <style>
+      body {
+        background-color: black;
+        }
+      #youtube {
+        float: left;
+
+      }
+      h1 {
+        font-family: impact;
+        color: white;
+        background-color: black;
+        background-position: center;
+        opacity: 0.7;
+        font-size: 50px;
+      }
+      ul {
+
+
+      }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+//     $.getJSON("http://api.songkick.com/api/3.0/artists/3950031/calendar.json?apikey=oleKZnXGwMwSb8es",
+//     function(data){
+//       var events = data['resultsPage']['results']['event'];
+//       for (var i=0;i < events.length; i++) {
+//    // here you can add the event title to an element like so:
+//     $("#events").append('<li><a href="'+events[i]['uri']+'">'+events[i]['displayName']+'</a></li>');
+//   }
+// });
+    $(document).ready(function() {
+    $.ajax({
+    url:  "http://api.songkick.com/api/3.0/artists/480448/calendar.json?apikey=oleKZnXGwMwSb8es&jsoncallback=?",
+    dataType:   "jsonp", // <== JSON-P request
+    success:    function(data){
+    $.each(data["resultsPage"]["results"]["event"], function(i, entry){
+    $("#events").append('<li><a href="' + entry.uri+'">'+entry.displayName +'</a></li>');
+    });
+  }
+  });
+  });
+
+    </script>
+  </body>
+</html>
