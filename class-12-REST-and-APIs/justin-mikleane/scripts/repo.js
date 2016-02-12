@@ -8,14 +8,15 @@
     $.ajax({
       // url:'https://api.github.com/users/sjb3/repos?page=3&per_page=100',
       url:'https://api.github.com/users/sjb3/repos?' + 'per_page=100' +
-          '&sort=update',
+          '&sort=updated',
 
       headers: { 'Authorization': 'token ' +  gitHubToken },
       success: function(data, status){
-        repos.all = data;
+        repos.all = data
       }
 
-    });
+
+    }).done(callback);
 
   };
 
